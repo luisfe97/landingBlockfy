@@ -31,6 +31,8 @@ h3 {
   margin: 0;
 }
 
+
+
 body {
   font-family: var(--body-font);
   color: var(--body-color);
@@ -69,19 +71,34 @@ body {
 .header {
   display: flex;
   align-items: center;
+  justify-content: space-around;
   height: 62px;
   width: 100%;
   white-space: nowrap;
   flex-shrink: 0;
   font-weight: 600;
   font-size: 15px;
-  border-bottom: 1px solid rgba(44, 45, 42, 0.25);
   position: sticky;
-  padding: 0 30px;
   top: 0;
   left: 0;
+  color: rgba(94, 100, 100, 1) !important;
   background-color: #fff;
   z-index: 6;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.header a {
+  color: rgba(94, 100, 100, 1) !important;
+  display: flex;
+}
+
+.header a h1 span {
+  color: orange !important;
+  margin-right: 20px;
+}
+.header h1 {
+  font-size: 30px;
+  color: rgba(94, 100, 100, 1);
+  width: 130px;
 }
 @media (max-width: 575px) {
   .header {
@@ -92,7 +109,7 @@ body {
 .header-menu {
   display: flex;
   align-items: center;
-  margin-left: auto;
+  margin: 0px 40px;
 }
 @media screen and (max-width: 740px) {
   .header-menu {
@@ -120,6 +137,17 @@ body {
 }
 .header-icons svg:not(:last-child) {
   margin-right: 20px;
+}
+.botonContacto {
+  border: 1px solid rgb(242,134,04);
+  border-color: 1px solid rgb(242,134,04);
+  margin: 0px 20px;
+  width: 150px;
+  background-color: rgb(242,134,04) !important;
+  background: white;
+  color: white ;
+  padding: 10px 0px;
+  border-radius: 12px;
 }
 
 .left-side {
