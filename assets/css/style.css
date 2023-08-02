@@ -50,7 +50,7 @@ body {
   display: flex;
   flex-direction: column;
   scroll-behavior: smooth;
-  background-color: #e6decf;
+  background-color: #ffffff;
   overflow-y: auto;
   overflow-x: hidden;
   position: relative;
@@ -80,7 +80,7 @@ body {
   padding: 0 30px;
   top: 0;
   left: 0;
-  background-color: var(--beach-bg);
+  background-color: #fff;
   z-index: 6;
 }
 @media (max-width: 575px) {
@@ -435,10 +435,6 @@ body {
 }
 
 [data-sld="1"] {
-  .container,
-  .header {
-    background-color: var(--glacier-bg);
-  }
   #hero {
     position: relative;
     background: url("../img/meta.gif") no-repeat;
@@ -491,10 +487,7 @@ body {
 }
 
 [data-sld="2"] {
-  .container,
-  .header {
-    background-color: var(--coral-bg);
-  }
+
   #hero {
     position: relative;
     background: url("../img/token.gif") no-repeat;
