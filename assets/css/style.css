@@ -39,6 +39,7 @@ body {
   padding: 0;
   margin: 0;
   overflow-x: hidden;
+  background-image: url('../img/Fondo.png');
 }
 @media (max-width: 480px) {
   body {
@@ -572,7 +573,7 @@ body {
 #servicios{
   display: flex;
   justify-content: flex-start;
-  background: #ffff;
+  background:transparent;
   background-attachment: fixed;
   background-size: cover;
   max-width: 100%;
@@ -580,6 +581,7 @@ body {
   padding: 0  32px;
   display: flex;
   overflow-x: hidden;
+  padding-top: 100px;
 }
 /*CARD*/
 .card__btn {
@@ -666,7 +668,7 @@ body {
 }
 
 .card-sm {
-  background: #ccc;
+  background: transparent;
   background-size: cover;
   background-position: center center;
   box-shadow: inset 0 0 100vw 100vw rgba(0, 0, 0, 0.3), 0 16px 8px -8px rgba(0, 0, 0, 0.4);
@@ -710,12 +712,12 @@ body {
     transform: scale(1);
   }
 
-  section.card-lg__container {
+div .card-lg__container {
     margin: 32px 0 0;
     padding: 0 0 32px;
   }
 
-  section.card-sm__container {
+div .card-sm__container {
     align-self: center;
     margin: 0 -72px 0 0;
   }
@@ -725,7 +727,7 @@ body {
     padding: 8px 32px 0;
   }
 
-  section .card-sm__container {
+div  .card-sm__container {
     height: unset;
     width: 100%;
     margin: 0;
@@ -736,7 +738,7 @@ body {
   }
   
 
-  section.card-sm {
+div .card-sm {
     width: calc(100% - 32px);
     height: 500px;
     margin: 0 0 16px;
@@ -746,4 +748,94 @@ body {
     margin: 8px 0;
     transform: scale(0.9);
   }
+}
+
+/*------------------------------------------carousel clientes*------------------------------------------*/
+#carouselCLientes{
+  display: flex;
+  justify-content: flex-start;
+  background:transparent;
+  background-attachment: fixed;
+  background-size: cover;
+  max-width: 100%;
+  height: 70vh;
+  padding: 0  32px;
+  display: flex;
+  overflow-x: hidden;
+  padding-top: 100px;
+}
+ #carouselCLientes {
+  position: relative;
+  height: 100vh;
+ }
+.carousel {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  font-family: Arial;
+}
+.carousel__list {
+  display: flex;
+  list-style: none;
+  position: relative;
+  width: 100%;
+  height: 300px;
+  justify-content: center;
+  perspective: 300px;
+}
+.carousel__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 0px;
+  width: 250px;
+  height: 350px;
+  border-radius: 12px;
+  box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.5);
+  position: absolute;
+  transition: all 0.3s ease-in;
+}
+.carousel__item:nth-child(1) {
+  background: linear-gradient(45deg, #2D35EB 0%, #904ED4 100%);
+}
+.carousel__item:nth-child(2) {
+  background: linear-gradient(45deg, #2D35EB 0%, #fdbb2d 100%);
+}
+.carousel__item:nth-child(3) {
+  background: linear-gradient(45deg, #2D35EB 0%, #22c1c3 100%);
+}
+.carousel__item:nth-child(4) {
+  background: linear-gradient(45deg, #fdbb2d 0%, #904ED4 100%);
+}
+.carousel__item:nth-child(5) {
+  background: linear-gradient(45deg, #22c1c3 0%, #904ED4 100%);
+}
+.carousel__item[data-pos="0"] {
+  z-index: 5;
+}
+.carousel__item[data-pos="-1"], .carousel__item[data-pos="1"] {
+  opacity: 0.7;
+  filter: blur(1px) grayscale(10%);
+}
+.carousel__item[data-pos="-1"] {
+  transform: translateX(-40%) scale(0.9);
+  z-index: 4;
+}
+.carousel__item[data-pos="1"] {
+  transform: translateX(40%) scale(0.9);
+  z-index: 4;
+}
+.carousel__item[data-pos="-2"], .carousel__item[data-pos="2"] {
+  opacity: 0.4;
+  filter: blur(3px) grayscale(20%);
+}
+.carousel__item[data-pos="-2"] {
+  transform: translateX(-70%) scale(0.8);
+  z-index: 3;
+}
+.carousel__item[data-pos="2"] {
+  transform: translateX(70%) scale(0.8);
+  z-index: 3;
 }
