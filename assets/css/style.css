@@ -586,7 +586,27 @@ body {
   display: flex;
   overflow-x: hidden;
   padding-top: 100px;
+    perspective: 1000px;
+
+
 }
+
+.container {
+  padding-top: 20px;
+  overflow: hidden !important;
+}
+
+.container .card-sm__container ul {
+  padding: 0;
+  list-style: none;
+}
+
+.card-sm__container li {
+  margin: 50px !important;
+  float: left;
+  padding: 50px 50px;
+}
+
 /*CARD*/
 .card__btn {
   color: #2c2d2a;
@@ -606,7 +626,7 @@ body {
 .card__text-sm {
   color: #fff;
   font-family: sans-serif;
-  font-size: 30px;
+  font-size: 20px;
   margin: 0;
   padding: 16px 0 8px;
   position: relative;
@@ -665,12 +685,17 @@ body {
 
 /*...small...*/
 .card-sm__container {
-  height: 232px;
+  height: fit-content;
   margin: 0 -88px 0 0;
   display: flex;
   align-self: center;
+  
 }
-
+.container {
+  background-color: transparent;
+  padding-top: 20px;
+  height: auto;
+}
 .card-sm {
   background: transparent;
   background-size: cover;
@@ -679,11 +704,10 @@ body {
   border-radius: 8px;
   width: 200px;
   height: 300px;
-  margin: 0 8px;
+  margin: 0 16px !important;
   padding: 24px 16px;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  flex-direction: row;
   cursor: pointer;
   transition: 0.3s ease;
 }
@@ -716,12 +740,12 @@ body {
     transform: scale(1);
   }
 
-div .card-lg__container {
+  div .card-lg__container {
     margin: 32px 0 0;
     padding: 0 0 32px;
   }
 
-div .card-sm__container {
+  div .card-sm__container {
     align-self: center;
     margin: 0 -72px 0 0;
   }
@@ -731,7 +755,7 @@ div .card-sm__container {
     padding: 8px 32px 0;
   }
 
-div  .card-sm__container {
+  div .card-sm__container {
     height: unset;
     width: 100%;
     margin: 0;
@@ -740,9 +764,8 @@ div  .card-sm__container {
     justify-content: center;
     align-items: center;
   }
-  
 
-div .card-sm {
+  div .card-sm {
     width: calc(100% - 32px);
     height: 500px;
     margin: 0 0 16px;
@@ -754,8 +777,33 @@ div .card-sm {
   }
 }
 
-/*------------------------------------------carousel clientes*------------------------------------------*/
-#carouselCLientes{
+.owl-wrapper {
+  transform-style: preserve-3d;
+}
+
+.owl-item {
+  width: 230px !important;
+  transition: all 250ms ease-out;
+  transform: translate3d(0px, 0px, 0px) scale(1);
+}
+.owl-item.active {
+  transform: translate3d(0px, 0px, -10px) scale(1) rotateY(25deg);
+}
+.owl-item.active + .active {
+  transform: translate3d(0px, 0px, 10px) scale(1);
+}
+.owl-item.active + .active + .active {
+  transform: translate3d(0px, 0px, 20px) scale(1);
+}
+.owl-item.active + .active + .active + .active {
+  transform: translate3d(0px, 0px, 10px) scale(1);
+}
+.owl-item.active + .active + .active + .active + .active {
+  transform: translate3d(0px, 0px, -10px) scale(1) rotateY(-25deg);
+}
+
+/*------------------------------------------clientes clientes*------------------------------------------*/
+#clientes{
   display: flex;
   justify-content: flex-start;
   background:transparent;
@@ -768,18 +816,18 @@ div .card-sm {
   overflow-x: hidden;
   padding-top: 100px;
 }
- #carouselCLientes {
+ #clientes {
   position: relative;
   height: 100vh;
  }
-.carousel {
+.clientes {
   display: flex;
   width: 100%;
   height: 100%;
   align-items: center;
   font-family: Arial;
 }
-.carousel__list {
+.clientes__list {
   display: flex;
   list-style: none;
   position: relative;
@@ -788,7 +836,7 @@ div .card-sm {
   justify-content: center;
   perspective: 300px;
 }
-.carousel__item {
+.clientes__item {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -801,45 +849,45 @@ div .card-sm {
   position: absolute;
   transition: all 0.3s ease-in;
 }
-.carousel__item:nth-child(1) {
+.clientes__item:nth-child(1) {
   background: linear-gradient(45deg, #2D35EB 0%, #904ED4 100%);
 }
-.carousel__item:nth-child(2) {
+.clientes__item:nth-child(2) {
   background: linear-gradient(45deg, #2D35EB 0%, #fdbb2d 100%);
 }
-.carousel__item:nth-child(3) {
+.clientes__item:nth-child(3) {
   background: linear-gradient(45deg, #2D35EB 0%, #22c1c3 100%);
 }
-.carousel__item:nth-child(4) {
+.clientes__item:nth-child(4) {
   background: linear-gradient(45deg, #fdbb2d 0%, #904ED4 100%);
 }
-.carousel__item:nth-child(5) {
+.clientes__item:nth-child(5) {
   background: linear-gradient(45deg, #22c1c3 0%, #904ED4 100%);
 }
-.carousel__item[data-pos="0"] {
+.clientes__item[data-pos="0"] {
   z-index: 5;
 }
-.carousel__item[data-pos="-1"], .carousel__item[data-pos="1"] {
+.clientes__item[data-pos="-1"], .clientes__item[data-pos="1"] {
   opacity: 0.7;
   filter: blur(1px) grayscale(10%);
 }
-.carousel__item[data-pos="-1"] {
+.clientes__item[data-pos="-1"] {
   transform: translateX(-40%) scale(0.9);
   z-index: 4;
 }
-.carousel__item[data-pos="1"] {
+.clientes__item[data-pos="1"] {
   transform: translateX(40%) scale(0.9);
   z-index: 4;
 }
-.carousel__item[data-pos="-2"], .carousel__item[data-pos="2"] {
+.clientes__item[data-pos="-2"], .clientes__item[data-pos="2"] {
   opacity: 0.4;
   filter: blur(3px) grayscale(20%);
 }
-.carousel__item[data-pos="-2"] {
+.clientes__item[data-pos="-2"] {
   transform: translateX(-70%) scale(0.8);
   z-index: 3;
 }
-.carousel__item[data-pos="2"] {
+.clientes__item[data-pos="2"] {
   transform: translateX(70%) scale(0.8);
   z-index: 3;
 }
