@@ -16,7 +16,7 @@
 * {
   box-sizing: border-box;
   outline: none;
-
+  
 }
 
 img {
@@ -161,6 +161,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  height: 100%;
 }
 @media screen and (max-width: 930px) {
   .left-side {
@@ -171,6 +172,7 @@ body {
 
 .mySwiper {
   display: flex;
+  align-items: stretch;
   flex-grow: 1;
   padding: 0;
 
@@ -195,15 +197,15 @@ body {
 }
 
 #hero {
-  padding: 10%;
   height: 92vh;
   width: 100%;
-  margin: 0;
+  
   position: relative;
   background: url("../img/mafe.gif") no-repeat;
   background-size: cover;
   background-attachment: fixed;
   margin: 0;
+  overflow: hidden;
 }
 #hero::before {
   width: 100%;
@@ -211,14 +213,19 @@ body {
   content: " ";
   position: absolute;
   background: conic-gradient(from 60deg at 0% 97%,rgba(18, 17, 17, 0.2),rgba(27, 25, 24, 0.2),rgba(36, 33, 32, 0.2),rgba(45, 41, 39, 0.2),rgba(54, 49, 47, 0.2),rgba(63, 57, 55, 0.2),rgba(72, 65, 62, 0.2),rgba(81, 73, 69, 0.2),rgba(91, 82, 78, 0.2),rgba(100, 90, 85, 0.2),rgba(109, 97, 91, 0.2),   rgba(118, 106, 100, 0.2),rgba(127, 114, 90, 0.2),rgba(136, 122, 110, 0.2),rgba(145, 130, 104, 0.2),rgba(154, 139, 118, 0.2),rgba(163, 147, 117, 0.2),rgba(172, 155, 125, 0.2),rgba(182, 163, 141, 0.2),rgba(191, 171, 149, 0.2),rgba(200, 179, 154, 0.2),rgba(209, 187, 162, 0.2),rgba(218, 195, 168, 0.2),rgba(227, 203, 176, 0.2),rgba(236, 211, 181, 0.2),rgba(103, 96, 65, 0.2));
-
   inset: 0;
   display: grid;
   place-items: right;
   pointer-events: none;
   cursor: none;
 }
+.right-side__img {
+  
+}
 .center .bottle-bg {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
   background: url("../img/0cbf2f5c3fb37d033c0bc791ae196dbb.gif") no-repeat;
   background-size: cover;
   width: 420px;
@@ -227,9 +234,10 @@ body {
   border-radius: 90px;
   position: relative;
   opacity: 0.8;
+  overflow: hidden;
 }
 .bottle-bg::before {
-  width: 100%;
+  width: 80%;
   height: 100%;
   border-radius: 90px;
   content: " ";
@@ -315,13 +323,15 @@ body {
 
 .center {
   display: flex;
-  margin-left: 120px;
+  align-items: stretch;
+  justify-content: center;
+  
   position: relative;
   flex-shrink: 0;
 }
 @media screen and (max-width: 930px) {
   .center {
-    margin-left: 0;
+    
     margin-bottom: 56px;
   }
 }
@@ -475,7 +485,7 @@ body {
     background: url("../img/meta.gif") no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    margin: 0;
+
   }
   #hero::before {
     width: 100%;
@@ -492,6 +502,9 @@ body {
     cursor: none;
   }
   .center .bottle-bg {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
     background: url("../img/0cbf2f5c3fb37d033c0bc791ae196dbb.gif") no-repeat;
     background-size: cover;
     width: 420px;
@@ -516,7 +529,7 @@ body {
    .bottle-img {
     height: 483px;
     top: 0% !important ;
-    left: -15% !important;
+    left: 0% !important;
     transform: scale(1.6);
   }
 }
@@ -528,7 +541,7 @@ body {
     background: url("../img/token.gif") no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    margin: 0;
+   
   }
   #hero::before {
     width: 100%;
@@ -544,6 +557,9 @@ body {
     cursor: none;
   }
   .center .bottle-bg {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
     background: url("../img/0cbf2f5c3fb37d033c0bc791ae196dbb.gif") no-repeat;
     background-size: cover;
     width: 420px;
@@ -570,18 +586,18 @@ body {
     height: 483px;
     width: 100%;
     top: 0% !important ;
-    left: -15% !important;
+    left: 0% !important;
     transform: scale(1.6);
   }
 }
 #servicios{
   display: flex;
-  justify-content: flex-start;
+  justify-content:center;
   background:transparent;
   background-attachment: fixed;
   background-size: cover;
   max-width: 100%;
-  height: 70vh;
+  height: 100vh;
   padding: 0  32px;
   display: flex;
   overflow-x: hidden;
@@ -803,30 +819,26 @@ body {
 }
 
 /*------------------------------------------clientes clientes*------------------------------------------*/
-#clientes{
+#client{
   display: flex;
-  justify-content: flex-start;
-  background:transparent;
-  background-attachment: fixed;
-  background-size: cover;
-  max-width: 100%;
-  height: 70vh;
-  padding: 0  32px;
-  display: flex;
-  overflow-x: hidden;
-  padding-top: 100px;
-}
- #clientes {
-  position: relative;
-  height: 100vh;
- }
-.clientes {
-  display: flex;
-  width: 100%;
-  height: 100%;
+  justify-content: center;
   align-items: center;
-  font-family: Arial;
+  background:transparent;
+
+  height: 70vh;
+  padding-top: 100px;
+  margin-left: 50px;
+  padding-left: 100px;
+  margin-bottom: 100px;
 }
+#client div {
+  display: flex;
+  width: 50%;
+}
+.col-6 {
+  width: 500px;
+}
+
 .clientes__list {
   display: flex;
   list-style: none;
@@ -1118,9 +1130,9 @@ body {
 
 /*------Tecnologias---------------*/
 .clients {
-  padding: 0 0 60px 0;
+  padding: 0;
+  width:100%;
 }
-
 .clients .swiper-slide img {
   opacity: 0.5;
   transition: 0.3s;
@@ -1130,4 +1142,37 @@ body {
 .clients .swiper-slide img:hover {
   filter: none;
   opacity: 1;
+}
+/*--------------------------------------------------------------
+# Clients Section
+--------------------------------------------------------------*/
+.tecnology {
+  padding: 0 0 60px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  z-index: 3;
+ 
+  
+}
+.tecnology img {
+  width: 200px;
+  height: 100px;
+}
+.tecnology .swiper-slide img {
+  opacity: 0.5;
+  transition: 0.3s;
+  filter: grayscale(100);
+}
+.tecnology .swiper-slide img:hover {
+  filter: none;
+  opacity: 2;
+}
+
+@media (max-width: 640px) {
+   .contain {
+    padding: 0 60px;
+    z-index: 2;
+  }
 }
