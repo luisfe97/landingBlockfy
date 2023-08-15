@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="assets/css/style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
@@ -47,18 +48,18 @@
                 </button>
               </div>
             </div>
-            <div class="center">
+            <div id="containMiss" class="center">
               <div class="right-side__img">
                 <div class="bottle-bg"></div>
-                <img class="bottle-img" src="assets\img\bottle_beach.png.png" />
+                <img id="miss" class="bottle-img" src="assets\img\bottle_beach.png.png" />
               </div>
             </div>
           </div>
           <div class="main swiper-slide" id="glacier">
-            <div class="center">
+            <div id="containMeta" class="center">
               <div class="right-side__img">
                 <div class="bottle-bg"></div>
-                <img class="bottle-img" src="assets\img/meta.png" />
+                <img id="meta" class="bottle-img" src="assets\img/meta.png" />
               </div>
             </div>
             <div class="left-side">
@@ -97,10 +98,10 @@
                 </button>
               </div>
             </div>
-            <div class="center">
+            <div id="containHouse" class="center">
               <div class="right-side__img">
                 <div class="bottle-bg"></div>
-                <img class="bottle-img" src="assets\img\casa.png" />
+                <img id="house" class="bottle-img" src="assets\img\casa.png" />
               </div>
             </div>
           </div>
@@ -118,8 +119,9 @@
           </svg>
         </div>
       </div>
-      <div class="swiper-pagination"></div>
+      
     </section>
+     <!-----------------------section services----------------------------------->
     <section id="servicios">
       <div class="card-lg__container">
         <h1 class="card__text-lg">Servicios</h1>
@@ -192,8 +194,9 @@
         </div>
       </div>
     </section>
+     <!-----------------------section Clientes----------------------------------->
     <section id="client">
-      
+      <div class="client">
         <div class="col-6">
           <div class="clientes">
             <ul class="clientes__list">
@@ -212,7 +215,7 @@
             <a href="#" class="card__btn">Discover Location</a>
           </div>
         </div>
-      
+      </div>
     </section>
 
     <section class="equipo">
@@ -268,25 +271,53 @@
     <!--------------section tecnologias----------------------------------->
 
     <section id="tecnology" class="tecnology">
-    <div >
-            <div class="swiper-slide">
+            <div class="">
               <img src="/assets/img/clients/Tecnologias_01.png" class="img-fluid" alt="" ></img>
             </div>
-            <div class="swiper-slide">
+            <div class="">
               <img src="/assets/img/clients/Tecnologias_02.png" class="img-fluid" alt="" ></img>
             </div>
-            <div class="swiper-slide">
+            <div class="">
               <img src="/assets/img/clients/Tecnologias_03.png" class="img-fluid" alt="" ></img>
             </div>
-            <div class="swiper-slide">
+            <div class="">
               <img src="/assets/img/clients/Tecnologias_04.png" class="img-fluid" alt="" ></img>
             </div>
-            <div class="swiper-slide">
+            <div class="">
               <img src="/assets/img/clients/Tecnologias_05.png" class="img-fluid" alt="" ></img>
             </div>
-    </div>
-      
   </section>
+  <!--------------------------------footer----------------------------------->
+  <footer id="footer" >
+    <div class="footer">
+    <div class="info">
+      <div>
+        <img src="/assets/img/iconGps.png" class="img-gps" alt="" ></img>
+      </div>
+      <div class="gps">
+        <h4>Find us</h4>
+        <p>1010 Avenous ,sw 54321,chandigath</p>
+      </div>
+    </div>
+    <div class="info">
+      <div>
+        <img src="/assets/img/call.png" class="img-call" alt="" ></img> 
+      </div>
+      <div><h4>Call us</h4>
+        <p>95612852635 0</p>
+      </div>
+    </div>
+    <div class="info">
+      <div>
+        <img src="/assets/img/email.png" class="img-mail" alt="" ></img> 
+      </div>
+      <div>
+        <h4>mail us</h4>
+        <p>mail@info.com</p>
+      </div>
+    </div>
+  </div>
+  </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js"></script>

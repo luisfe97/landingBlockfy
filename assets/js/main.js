@@ -259,7 +259,7 @@ Equipo
 
   /*----------tecnologias--------------*/
   new Swiper(".clients-slider", {
-    speed: 400,
+    speed: 300,
     loop: true,
     autoplay: {
       delay: 5000,
