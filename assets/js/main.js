@@ -20,6 +20,14 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   /*--------------------
+NAV
+--------------------*/
+
+  $('#myTab a').on('click', function (e) {
+    e.preventDefault()
+    $(this).tab('show')
+  })
+  /*--------------------
 Vars
 --------------------*/
   let progress = 50;
@@ -258,6 +266,30 @@ Equipo
   $list.addEventListener("keyup", handleSlideKey);
 
   /*----------tecnologias--------------*/
+
+  $('#carousel-example').on('slide.bs.carousel', function (e) {
+    /*
+        CC 2.0 License Iatek LLC 2018 - Attribution required
+    */
+    var $e = $(e.relatedTarget);
+    var idx = $e.index();
+    var itemsPerSlide = 5;
+    var totalItems = $('.carousel-item').length;
+ 
+    if (idx >= totalItems-(itemsPerSlide-1)) {
+        var it = itemsPerSlide - (totalItems - idx);
+        for (var i=0; i<it; i++) {
+            // append slides to end
+            if (e.direction=="left") {
+                $('.carousel-item').eq(i).appendTo('.carousel-inner');
+            }
+            else {
+                $('.carousel-item').eq(0).appendTo('.carousel-inner');
+            }
+        }
+    }
+});
+
   new Swiper(".clients-slider", {
     speed: 300,
     loop: true,
@@ -288,6 +320,6 @@ Equipo
 });
 
 $(".card-sm__container ul").owlCarousel({
-  items: 1,
+  items: 4,
   addClassActive: true,
 });
