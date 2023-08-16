@@ -287,8 +287,7 @@ Equipo
   });
 });
 
-
 $(".card-sm__container ul").owlCarousel({
-  items: 2,
+  items: 1,
   addClassActive: true,
 });
