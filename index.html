@@ -15,387 +15,233 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
   </head>
   <body>
-
-
-
-
-
-<!---
-    <div class="header">
-      <a class="menu-icon" href="#">
-        <a class="logo d-flex align-items-center scrollto me-auto me-lg-0">
-          <h1>Block<span>fy</span></h1>
-        </a>
-      </a>
-      <div class="header-menu">
-        <a href="#">Nuestros Servicios</a>
-        <a href="#">Nuestro Trabajo</a>
-        <a href="#">Nuestro Equipo</a>
-        <a href="#"><span>Universo Blockfy</span><i className="bi bi-chevron-down dropdown-indicator"></i> </a>
-      </div>
---->
-
-
-
-
-      <nav class="header">
-        <h1>Block<span>fy</span></h1>
+      <nav  class="header">
+            <div class="logo">
+              <button id="open" class="botonOpen"><i class="bi bi-list"></i></button>
+              <h1>Block<span>fy</span></h1>
+            </div>
         <div class="header-menu myTab">
-        <div class="nav nav-tabs" id="nav-tab" role="tablist">
-          <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Nuestros Servicios</a>
-          <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Nuestro Trabajo</a>
-          <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="pill" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Nuestro Equipo</a>
-        </div>
-        </div>
-        <button class="botonContacto">contactenos</button>
-      </nav>
-      <div class="tab-content" id="nav-tabContent">
-        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">...</div>
-        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
-        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
-      </div>
+          <div  class="nav nav-tabs" id="nav-tab" role="tablist">
+            <div id="nav" class="menu">
+              <button id="close" class="botonClose"><i class="bi bi-x-circle"></i></button>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Nuestros Servicios
+                    </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#"></a>
+                    <a class="dropdown-item" href="#">DAPPS (contratos inteligentes)</a>
+                    <a class="dropdown-item" href="#">Marketplace NFT</a>
+                    <a class="dropdown-item" href="#">Security tokens</a>
+                    <a class="dropdown-item" href="#">Desarrollo de video juegos</a>
+                    <a class="dropdown-item" href="#">Realidad virtual</a>
+                    <a class="dropdown-item" href="#">Realidad aumentada</a>
+                      <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Metaversos</a>
+                    <a class="dropdown-item" href="#">Colecciones NFT</a>
+                    <a class="dropdown-item" href="#">POAP</a>
+                    <a class="dropdown-item" href="#">Pasarela de fiat a crypto</a>
+                    <a class="dropdown-item" href="#">Pasarela crypto</a>
+                    
+                  </div>
+                </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Nuestro Trabajo
+                </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">Empresas</a>
+                <a class="dropdown-item" href="#">Arity (Extracción De Oro Y joyería)</a>
+                <a class="dropdown-item" href="#">Miss Universe Colombia (Colección Y Marketplace NFT) </a>
+                <a class="dropdown-item" href="#">Metaestate (Metaverso Sector Inmobiliario)</a>
+                <a class="dropdown-item" href="#">Invermint (Tokenizacion De Real Estate)</a>
+                <a class="dropdown-item" href="#">Gmfinance (Fintech Con Opciones Crypto-Fiat)</a>
+              </div>
+            </li>
+            <div>
+                  <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="pill" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Acerca de </a>
+            </div>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Universo Blockfy
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#"></a>
+                  <a class="dropdown-item" href="#">Gemelos digitales Real estate</a>
+                  <a class="dropdown-item" href="#">Tokenización inmobiliaria</a>
+                  
+                    <div class="dropdown-divider"></div>
+                </div>
+            </li>
+            <button class="botonContacto">Contactenos</button>
 
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!------------------------------------------------Menu Nav end------------------------------------------->
       
-    </div>
-    <section id="hero">
-      <div class="mySwiper">
-        <div class="main-wrapper swiper-wrapper">
-          <div class="main swiper-slide" id="savanna">
-            <div class="left-side">
-              <div class="main-wrapper">
-                <h1 class="main-title">MISS UNIVERSE</h1>
-              </div>
-              <div class="main-content">
-                <div class="main-content__title">El Primer NFT de miss universo en colombia</div>
-                <button class="more-menu">
-                  Conoce Mas
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.7" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <line x1="-5" y1="12" x2="19" y2="12" />
-                    <line x1="15" y1="16" x2="19" y2="12" />
-                    <line x1="15" y1="8" x2="19" y2="12" />
-                  </svg>
+
+       <!------------------------------------------------
+      Services blockfy Open
+      ------------------------------------------->
+    <section class="services">
+      <div class="serviceLeft">
+        <div id="accordion">
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h5 class="mb-0">
+                <div class="serviceIcon">
+                  <img src="/assets/img/open-book.png" alt="">
+                </div>
+                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  DAPPS (contratos inteligentes)
                 </button>
-              </div>
+              </h5>
             </div>
-            <div id="containMiss" class="center">
-              <div class="right-side__img">
-                <div class="bottle-bg"></div>
-                <img id="miss" class="bottle-img" src="assets\img\bottle_beach.png.png" />
+        
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+              <div class="card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 
               </div>
             </div>
           </div>
-          <div class="main swiper-slide" id="glacier">
-            <div id="containMeta" class="center">
-              <div class="right-side__img">
-                <div class="bottle-bg"></div>
-                <img id="meta" class="bottle-img" src="assets\img/meta.png" />
-              </div>
-            </div>
-            <div class="left-side">
-              <div class="main-wrapper">
-                <h1 class="main-title">METAESTATE</h1>
-              </div>
-              <div class="main-content">
-                <div class="main-content__title">Experiencia de realidad virtual para RealState</div>
-                <button class="more-menu">
-                  Conoce mas
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.7" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <line x1="-5" y1="12" x2="19" y2="12" />
-                    <line x1="15" y1="16" x2="19" y2="12" />
-                    <line x1="15" y1="8" x2="19" y2="12" />
-                  </svg>
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h5 class="mb-0">
+                <div class="serviceIcon">
+                  <img src="/assets/img/virtual-reality.png" alt="">
+                </div>
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Realidad virtual
                 </button>
+              </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+              <div class="card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 
               </div>
             </div>
           </div>
-          <div class="main swiper-slide" id="coral">
-            <div class="left-side">
-              <div class="main-wrapper">
-                <h1 class="main-title">TOKENIZACIÓN</h1>
-              </div>
-              <div class="main-content">
-                <div class="main-content__title">El Primer NFT de miss universo en colombia</div>
-                <button class="more-menu">
-                  Conoce Mas
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.7" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <line x1="-5" y1="12" x2="19" y2="12" />
-                    <line x1="15" y1="16" x2="19" y2="12" />
-                    <line x1="15" y1="8" x2="19" y2="12" />
-                  </svg>
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h5 class="mb-0">
+                <div class="serviceIcon">
+                  <img src="/assets/img/card.png" alt="">
+                </div>
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Colecciones NFT
                 </button>
-              </div>
+              </h5>
             </div>
-            <div id="containHouse" class="center">
-              <div class="right-side__img">
-                <div class="bottle-bg"></div>
-                <img id="house" class="bottle-img" src="assets\img\casa.png" />
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+              <div class="card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="button-wrapper">
-        <div class="swiper-button swiper-prev-button">
-          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-          </svg>
-        </div>
-        <div class="swiper-button swiper-next-button">
-          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-          </svg>
-        </div>
+      <div class="serviceImg">
+          <img class="imageService" src="assets/img/ciudad.png" alt="">
       </div>
-    </section>
-     <!-----------------------section services----------------------------------->
-    <section id="servicios">
-      <div class="card-lg__container">
-        <h1 class="card__text-lg">Servicios</h1>
-        <p class="card__text-md">Explora el ecosistema con nuestros servicios UX (user experience).</p>
-        <a href="#" class="card__btn">continuar</a>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="card-sm__container">
-              <ul>
-                <li>
-                  <div class="card-sm" style="background-image: url('/assets/img/serv1.png')">
-                    <p class="card__text-sm">Tanifa - Spain</p>
-                    <h1 class="card__text-lg">Los Lances Beach</h1>
-                  </div>
-                </li>
-                <li>
-                  <div class="card-sm" style="background-image: url('/assets/img/serv2.png'); background-position: center right">
-                    <p class="card__text-sm">Japan Alps</p>
-                    <h1 class="card__text-lg">Nagano Prefecture</h1>
-                  </div>
-                </li>
-                <li>
-                  <div class="card-sm" style="background-image: url('/assets/img/serv3.png')">
-                    <p class="card__text-sm">Sierra Nevada - USA</p>
-                    <h1 class="card__text-lg">Yosemite National</h1>
-                  </div>
-                </li>
-                <li>
-                  <div class="card-sm" style="background-image: url('/assets/img/Section.png')">
-                    <p class="card__text-sm">Cappadocia - Turkey</p>
-                    <h1 class="card__text-lg">Goreme &nbsp; Valley</h1>
-                  </div>
-                </li>
-                <li>
-                  <div class="card-sm" style="background-image: url('/assets/img/serv1.png')">
-                    <p class="card__text-sm">Tanifa - Spain</p>
-                    <h1 class="card__text-lg">Los Lances Beach</h1>
-                  </div>
-                </li>
-                <li>
-                  <div class="card-sm" style="background-image: url('/assets/img/serv2.png'); background-position: center right">
-                    <p class="card__text-sm">Japan Alps</p>
-                    <h1 class="card__text-lg">Nagano Prefecture</h1>
-                  </div>
-                </li>
-                <li>
-                  <div class="card-sm" style="background-image: url('/assets/img/serv3.png')">
-                    <p class="card__text-sm">Sierra Nevada - USA</p>
-                    <h1 class="card__text-lg">Yosemite National</h1>
-                  </div>
-                </li>
-                <li>
-                  <div class="card-sm" style="background-image: url('/assets/img/Section.png')">
-                    <p class="card__text-sm">Sierra Nevada - USA</p>
-                    <h1 class="card__text-lg">Yosemite National</h1>
-                  </div>
-                </li>
-                <li>
-                  <div class="card-sm" style="background-image: url('/assets/img/serv1.png')">
-                    <p class="card__text-sm">Tanifa - Spain</p>
-                    <h1 class="card__text-lg">Los Lances Beach</h1>
-                  </div>
-                </li>
-                <li>
-                  <div class="card-sm" style="background-image: url('/assets/img/serv1.png')">
-                    <p class="card__text-sm">Tanifa - Spain</p>
-                    <h1 class="card__text-lg">Los Lances Beach</h1>
-                  </div>
-                </li>
-                <li>
-                  <div class="card-sm" style="background-image: url('/assets/img/serv2.png'); background-position: center right">
-                    <p class="card__text-sm">Japan Alps</p>
-                    <h1 class="card__text-lg">Nagano Prefecture</h1>
-                  </div>
-                </li>
-                <li>
-                  <div class="card-sm" style="background-image: url('/assets/img/serv3.png')">
-                    <p class="card__text-sm">Sierra Nevada - USA</p>
-                    <h1 class="card__text-lg">Yosemite National</h1>
-                  </div>
-                </li>
-                <li>
-                  <div class="card-sm" style="background-image: url('/assets/img/Section.png')">
-                    <p class="card__text-sm">Cappadocia - Turkey</p>
-                    <h1 class="card__text-lg">Goreme &nbsp; Valley</h1>
-                  </div>
-                </li>
-                <li>
-                  <div class="card-sm" style="background-image: url('/assets/img/serv1.png')">
-                    <p class="card__text-sm">Tanifa - Spain</p>
-                    <h1 class="card__text-lg">Los Lances Beach</h1>
-                  </div>
-                </li>
-                <li>
-                  <div class="card-sm" style="background-image: url('/assets/img/serv2.png'); background-position: center right">
-                    <p class="card__text-sm">Japan Alps</p>
-                    <h1 class="card__text-lg">Nagano Prefecture</h1>
-                  </div>
-                </li>
-                <li>
-                  <div class="card-sm" style="background-image: url('/assets/img/serv3.png')">
-                    <p class="card__text-sm">Sierra Nevada - USA</p>
-                    <h1 class="card__text-lg">Yosemite National</h1>
-                  </div>
-                </li>
-                <li>
-                  <div class="card-sm" style="background-image: url('/assets/img/Section.png')">
-                    <p class="card__text-sm">Sierra Nevada - USA</p>
-                    <h1 class="card__text-lg">Yosemite National</h1>
-                  </div>
-                </li>
-                <li>
-                  <div class="card-sm" style="background-image: url('/assets/img/serv1.png')">
-                    <p class="card__text-sm">Tanifa - Spain</p>
-                    <h1 class="card__text-lg">Los Lances Beach</h1>
-                  </div>
-                </li>
-              </ul>
+      <div class="serviceRight">
+        <div class="card">
+          <div class="card-header" id="headingFour">
+            <h5 class="mb-0">
+              <div class="serviceIcon">
+                <img src="/assets/img/crypto.png" alt="">
+              </div>
+              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                Pasarela Fiat a Crypto
+              </button>
+            </h5>
+          </div>
+      
+          <div id="collapseFour" class="collapse show" aria-labelledby="headingFour" data-parent="#accordion">
+            <div class="card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 
             </div>
           </div>
         </div>
-      </div>
-    </section>
-     <!-----------------------section Clientes----------------------------------->
-    <section id="client">
-      <div class="client">
-        <div class="col-6">
-          <div class="clientes">
-            <ul class="clientes__list">
-              <li class="clientes__item" data-pos="-2">1</li>
-              <li class="clientes__item" style="background-size: 250px 350px; background-repeat: no-repeat; background-image: url('/assets/img/palazzo-moderno-di-lusso-con-piscina.jpg.png')" data-pos="-1">2</li>
-              <li class="clientes__item" style="background-size: 250px 350px; background-repeat: no-repeat; background-image: url('/assets/img/missuniverse.png')" data-pos="0">3</li>
-              <li class="clientes__item" style="background-size: 250px 350px; background-repeat: no-repeat; background-image: url('/assets/img/NFTS-Invermint_3.jpg')" data-pos="1">4</li>
-              <li class="clientes__item" data-pos="2">5</li>
-            </ul>
+        <div class="card">
+          <div class="card-header" id="headingFive">
+            <h5 class="mb-0">
+              <div class="serviceIcon">
+                <img src="/assets/img/security.png" alt="">
+              </div>
+              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                Security Tokens
+              </button>
+            </h5>
+          </div>
+      
+          <div id="collapseFive" class="collapse show" aria-labelledby="headingFive" data-parent="#accordion">
+            <div class="card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingSix">
+            <h5 class="mb-0">
+              <div class="serviceIcon">
+                <img src="/assets/img/tax.png" alt="">
+              </div>
+              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                Capacitación y Asesoria
+              </button>
+            </h5>
+          </div>
+      
+          <div id="collapseSix" class="collapse show" aria-labelledby="headingSix" data-parent="#accordion">
+            <div class="card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 
+            </div>
           </div>
         </div>
       </div>
       
-      <div id="textoCliente" class="col-6">
-        <div class="card-lg__container">
-          <h1 class="card__text-lg">Clientes</h1>
-          <p class="card__text-md">Nuestras experiencias previas</p>
-          <a href="#" class="card__btn">continuar</a>
-        </div>
-      </div>
     </section>
-    <section class="equipo">
-      <ul class="equipo__list">
-        <li class="equipo__item" tabindex="0" data-active="data-active">
-          <div class="equipo__box">
-            <div class="equipo__image"><img src="https://images.unsplash.com/photo-1590086782792-42dd2350140d?fit=crop&amp;amp;h=720&amp;amp;q=80" width="480" height="720" /></div>
-            <div class="equipo__contents">
-              <h2 class="user__name">Albert Sørensen</h2>
-              <h3 class="user__title">Neural Big Shot of Anticipation</h3>
+      <!------------------------------------------------
+        end Services blockfy
+      ------------------------------------------->
+      <!------------------------------------------------
+        targets projects
+      ------------------------------------------->
+      <section class="grupo">
+        
+          <article class="article">
+            <img src="assets/img/mafe.gif"  alt="equipo11">
+            <div class="texto-grupo">
+              <h2> tokeniuzacion , inmesion de experiencia</h2>
             </div>
-          </div>
-        </li>
-        <li class="equipo__item" tabindex="0">
-          <div class="equipo__box">
-            <div class="equipo__image"><img src="https://images.unsplash.com/photo-1553514029-1318c9127859?fit=crop&amp;amp;h=720&amp;amp;q=80" width="480" height="720" /></div>
-            <div class="equipo__contents">
-              <h2 class="user__name">Candice Marchand</h2>
-              <h3 class="user__title">Mindful Realist of Motion Laws</h3>
+            <img src="assets/img/bottle_beach.png.png"  alt="equipo1">
+          </article>
+          <article class="article">
+            <img src="assets/img/tokenizacion.gif"  alt="equipo11">
+            <div class="texto-grupo">
+              <h2> tokeniuzacion , inmesion de experiencia</h2>
             </div>
-          </div>
-        </li>
-        <li class="equipo__item" tabindex="0">
-          <div class="equipo__box">
-            <div class="equipo__image"><img src="https://images.unsplash.com/photo-1596813362035-3edcff0c2487?fit=crop&amp;amp;h=720&amp;amp;q=80" width="480" height="720" /></div>
-            <div class="equipo__contents">
-              <h2 class="user__name">Jennifer Salazar</h2>
-              <h3 class="user__title">Design Habitué</h3>
+            <img src="assets/img/casa.png"  alt="equipo1">
+          </article>
+          <article class="article">
+            <img src="assets/img/meta.gif"  alt="equipo11">
+            <div class="texto-grupo">
+              <h2> tokeniuzacion , inmesion de experiencia</h2>
             </div>
-          </div>
-        </li>
-      </ul>
-    </section>
-    <!--------------section tecnologias----------------------------------->
-    <section id="tecnology" class="tecnology">
-    <div class="top-content">
-      <div class="container-fluid">
-          <div id="carousel-example" class="carousel slide" data-ride="carousel">
-              <div class="carousel-inner row w-100 mx-auto" role="listbox">
-                  <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 active">
-                      <img src="/assets/img/clients/Tecnologias_01.png" class="img-fluid mx-auto d-block" alt="img1">
-                  </div>
-                  <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                      <img src="/assets/img/clients/Tecnologias_02.png" class="img-fluid mx-auto d-block" alt="img2">
-                  </div>
-                  <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                      <img src="/assets/img/clients/Tecnologias_03.png"class="img-fluid mx-auto d-block" alt="img3">
-                  </div>
-                  <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                      <img src="/assets/img/clients/Tecnologias_04.png" class="img-fluid mx-auto d-block" alt="img4">
-                  </div>
-                  <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                      <img src="/assets/img/clients/Tecnologias_05.png" class="img-fluid mx-auto d-block" alt="img5">
-                  </div>
-              </div>
-              <a class="carousel-control-prev" href="#carousel-example" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#carousel-example" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
-              </a>
-          </div>
+            <img src="assets/img/meta.png"  alt="equipo1">
+          </article>
+      </section>
+      <div class="demo">
+        <button class="botonDemo"> Acceder </button>
       </div>
-  </div>
-  </section>
-  <footer id="footer" >
-    <div class="footer">
-    <div class="info">
-      <div>
-        <img src="/assets/img/iconGps.png" class="img-gps" alt="" ></img>
-      </div>
-      <div class="gps">
-        <h4>Find us</h4>
-        <p>1010 Avenous ,sw 54321,chandigath</p>
-      </div>
-    </div>
-    <div class="info">
-      <div>
-        <img src="/assets/img/call.png" class="img-call" alt="" ></img> 
-      </div>
-      <div><h4>Call us</h4>
-        <p>95612852635 0</p>
-      </div>
-    </div>
-    <div class="info">
-      <div>
-        <img src="/assets/img/email.png" class="img-mail" alt="" ></img> 
-      </div>
-      <div>
-        <h4>mail us</h4>
-        <p>mail@info.com</p>
-      </div>
-    </div>
-  </div>
+      <!------------------------------------------------
+        end targets projects
+      ------------------------------------------->
   </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
