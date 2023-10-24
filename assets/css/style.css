@@ -7,15 +7,14 @@
   --glacier-bg: #b6d6c8;
   --coral-bg: #e86357;
   --arrow-fill: #333231;
-  --body-font: sans-serif;
-  --italic-font: serif;
+  --body-font: "Poppins";
+  --italic-font: "Poppins";
   --height: calc(80vh - 50px);
   --width: 850px;
 }
 
 * {
   box-sizing: border-box;
-  outline: none;
   
   
 }
@@ -36,7 +35,8 @@ a {
 h1,
 h2,
 h3 {
-  margin: 0;
+  margin: 10px;
+  font-size: 22px;
 }
 
 body {
@@ -45,7 +45,7 @@ body {
   padding: 0;
   margin: 0;
   overflow-x: hidden;
-  /*background-image: url('../img/Fondo.png');*/
+  background-color: #E6E6E6 !important;
   background-size: cover;
 }
 .header {
@@ -245,58 +245,50 @@ services desktop
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  width: 100%;
+  background-color: #E6E6E6;
+  padding: 20px;
 }
-.services div {
-  background-color: transparent;
-  border: 0px;
-  padding: 0px 100px;
+.serviceRight {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
   
 }
-.serviceImg {
-  width: 30% !important;
-  margin: 20px;
+#accordion {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
 }
 .services button {
-  color: #ff9700 !important;
+  color: black !important;
   font-weight: 700;
+  font-size: 20px;
   border: none;
+  width: fit-content !important;
 }
+
 .serviceIcon {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 130px;
-  height: 130px;
+  width: 140px;
+  height: 140px;
   border-radius: 40px;
   background-color: transparent !important;
-  border: #ff9700 solid 1px;
+
 }
 .serviceIcon img {
-  
-  width: 100px;
-  
-  color: white;
-  object-fit: cover;
+  width: 120px;
+  height: 120px;
+  padding: 20px;
 }
 .services h5 {
-  display: flex;
-  text-align: center;
-  justify-content: flex-start;
   font-family: sans-serif;
   border-radius: 15px;
-  width: 100%;
-  
 }
 .botonTitulo {
   color: #ff9700 !important;
   font-weight: bold;
-}
-.serviceRight h5:hover {
-  width: 100%;
-  z-index: 1;
-}
-.serviceLeft h5:hover {
-  width: 100%;
 }
 .collapsed {
   border: none !important;
@@ -305,48 +297,46 @@ services desktop
   outline: transparent !important;
   z-index: 0 !important;
 }
+.card-body {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+}
 .card-body p{
-  padding: 0px 15px;
-  width: fit-content;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 10px 20px 10px 20px;
+  width: 100%;
+  font-size: 11px;
 }
 .card {
-  width: 400px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 300px !important;
+  height: 300px;
   color: #6c757d;
   font-style: normal;
-  text-align: justify;
+  text-align:left;
+  margin: 20px;
+  background-color: #ffffff;
+  border-radius: 20px !important;
 }
-.card div  {
+.card-header{
+  border-radius: 20px !important;
+  background-color: #ffffff !important;
+  border-bottom: none !important;
+}
+.card div h5 {
+  width: fit-content;
+}
+
+.card-header {
   padding: 0px !important;
 }
 
-.card div h5 {
-  
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  width: 150px;
-}
-.card div div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 0px;
-}
-.card-header {
-  color: #ff9700 !important;
-  width: fit-content;
-}
-
-.serviceRight div , .serviceLeft div {
-padding: 20px 0px;
-
-}
 /*-------------------------------------
 targets groups projects
 ---------------------------------------*/
@@ -617,6 +607,66 @@ targets groups projects
   align-items: center;
   margin-bottom: 100px;
 }
+.ejemplo{
+  
+  background-color: transparent !important;
+  
+}
+.ejemplo div {
+  background-color: transparent !important;
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  gap:10px;
+  animation: moveRight 6s linear infinite;
+  background-color: #E6E6E6;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0px;
+  
+}
+.ejemplo img {
+  width:300px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  padding: 10px;
+}
+.associate {
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 100% !important;
+  height:fit-content;
+  background-color: rgba(128, 128, 128, 0.719);
+}
+.associate div {
+  display: inline-block;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: fit-content;
+  height: 80px;
+  width: 100%;
+ 
+}
+.associate div div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  margin-bottom: 50px;
+}
+.associate img {
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+  width:30% !important;
+ 
+}
 /*-------------------------------------
 targets groups projects end
 ---------------------------------------*/
@@ -687,11 +737,26 @@ media query cellphone
   /*---------------services query------------*/
   .services {
     display: flex;
-    flex-direction: column;
+    flex-direction: column !important;
     justify-content: flex-start;
     align-items: flex-start;
     width: 100% !important;
-    height: fit-content;
+    
+    margin-top: 20px;
+  }
+  .serviceRight  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column !important;
+    width: 100%;
+  }
+ #accordion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column !important;
+    width: 100%;
   }
   .services h5 {
     display: flex;
@@ -703,47 +768,62 @@ media query cellphone
     border: 0px;
   }
   .services button {
-    color: #ff9700 !important;
-    width: 100px;
-    height: 200px;
+    
+    color: black !important;
+    width: 200px;
+    padding: 0px !important;
   }
   .serviceIcon {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 70px;
-    height: 70px;
+    width: 140px;
+    height: auto;
     border-radius: 40px;
-    background-color: #ff9700 !important;
-    border: #ff9700 solid 1px;
-    
+    padding: 0px !important;
   }
   .serviceIcon img {
-    width: 70px;
-    height: 70px;
-    color: white;
+    width: 140px;
+    margin-bottom: 10px;
     object-fit: cover;
   }
   .serviceImg {
     display: none;
   }
+  .card {
+    display: flex;
+    flex-direction: column;
+    width: 100% !important;
+    margin: 0px !important;
+  }
+  .card div h5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
   .card-body {
-    padding: 20px;
+
+  }
+  .card-body p {
+    width: 100% !important;
+    text-align: justify;
+  }
+  .card-body {
+    padding: 0px !important;
     width: 100% !important;
     padding-left: 15px;
   }
   .serviceRight h5 {
     flex-direction: row;
   }
-  .services h5:hover {
-    box-shadow: inset 0 0 6px #ff9700;
-    width: fit-content;
-  }
-  .serviceRight {
+ 
+  .serviceRight , .serviceLeft{
     padding-left: 10px;
   }
   .serviceRight div , .serviceLeft div {
-    padding: 10px;
+    padding: 0px;
     }
 /*-------------------------------------
 targets groups projects
@@ -761,6 +841,36 @@ targets groups projects
   /*-------------------------------------
 targets groups projects end 
 ---------------------------------------*/
+
+  .ejemplo div {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #ejemplo {
+    margin-top: none !important;
+    padding: none !important;
+  }
+  .associate img {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100px;
+  }
+  .carousel-item {
+    height: fit-content;
+    margin: none !important;
+  }
+  .associate div div {
+    height: 100px !important;
+    width: auto;
+  }
+  .associate div {
+    height: 100px !important;
+  }
+  .associate{
+    height: 100px !important;
+  }
+  
 }
-
-
