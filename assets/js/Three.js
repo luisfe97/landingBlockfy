@@ -15,7 +15,7 @@ window.addEventListener("resize", function() {
   renderer.setSize( window.innerWidth, window.innerHeight );
 });
 
-var distance = Math.min(200, window.innerWidth / 6);
+var distance = Math.min(150, window.innerWidth / 6);
 var geometry = new THREE.Geometry();
 
 for (var i = 0; i < 1600; i++) {
@@ -31,7 +31,7 @@ for (var i = 0; i < 1600; i++) {
 
   geometry.vertices.push(vertex);
 }
-var particles = new THREE.Points(geometry, new THREE.PointsMaterial({color: 0xadb5bd, size: 2}));
+var particles = new THREE.Points(geometry, new THREE.PointsMaterial({color: 0xE4DED5, size: 2}));
 particles.boundingSphere = 50;
 
 
