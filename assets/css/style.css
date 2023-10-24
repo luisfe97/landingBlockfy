@@ -689,6 +689,98 @@ footer{
 /*-------------------------------------
 targets groups projects end
 ---------------------------------------*/
+
+
+/*------------------------
+footer
+-------------------------*/
+
+footer span {
+  color: #ff9700 !important;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  margin-right: 20px;
+  margin-left: 2px;
+  width: 400px !important;
+}
+
+footer h1 {
+  font-weight:400 !important;
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff !important;
+  width: 400px !important;
+  margin-bottom: 0px;
+  font-size: 60px !important;
+  font-family: "poppins";
+  font-weight: 300;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  display: flex !important; /* Usar flexbox para alinear las columnas */
+  justify-content: space-around; /* Distribuir el espacio entre las columnas */
+  flex-wrap: wrap;
+  width: 100%;
+  text-align: left !important;
+}
+
+footer div {
+  width: 40%;
+}
+
+#logoFooter {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.column {
+  text-align: left;
+  flex: 1; /* Cada columna toma una parte igual del espacio disponible */
+  margin: 0 10px; /* Espacio entre las columnas */
+}
+
+.column h3 {
+  font-size: 1.2rem;
+  
+  color: #ff9700;
+}
+
+.column img {
+  max-width: 100px;
+  height: auto;
+}
+
+.column ul {
+  list-style: none;
+  padding-left: 10px !important;
+  color:#ffffff !important;
+}
+
+.column li {
+  margin-bottom: 5px;
+  color: #ffffff !important;
+}
+
+.column a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.column a:hover {
+  text-decoration: underline;
+}
+#column2 a {
+  color: #ffffff !important;
+}
+/*------------------------
+footer end
+-------------------------*/
+
 /*-----------------------------------------------------------
 media query cellphone
 ------------------------------------------------------------*/
@@ -891,5 +983,32 @@ targets groups projects end
   .associate{
     height: 100px !important;
   }
-  
+  /*------------------------------
+seccion footer
+------------------------------*/
+
+footer {
+  width: 100%;
+  height: 100% !important;
+  font-size: 10px;
+  box-shadow: 0px -8px 18px -6px rgba(43,47,56,1)!important;
+ 
+}
+
+footer img {
+  width: 150px;
+}
+.formulario {
+  display: none;
+}
+.wrapper ul{
+  width: 100px;
+}
+.wrapper ul li{
+  margin-top: 20px;
+}
+
+/*------------------------------
+seccion footer end
+------------------------------*/
 }
