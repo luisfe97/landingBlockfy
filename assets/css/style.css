@@ -702,6 +702,7 @@ footer span {
   margin-right: 20px;
   margin-left: 2px;
   width: 400px !important;
+  
 }
 
 footer h1 {
@@ -724,6 +725,7 @@ footer {
   flex-wrap: wrap;
   width: 100%;
   text-align: left !important;
+  height: fit-content !important;
 }
 
 footer div {
